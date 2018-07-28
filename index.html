@@ -5,38 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <script src="script.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <title>AppName</title>
+    <title>JustGO</title>
 </head>
 <body>
   <!-- navbar -->  
   <nav>
       <ul class="nav-wrapper">
-            <li><a href="#contact">About</a></li>
-            
-            <li><a href="#news">Contact</a></li>
-            <li><a href="#contact">News</a></li>
-            <li><a href="#home">Home</a></li>
+            <li style="float: left;"><a href="#">JustGO</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+            <li><a href="#contribute">Contribute</a></li>
 <!--             <li style="float:right"><a class="active" href="#about">About</a></li>
  -->          </ul>
   </nav>
 <!-- navbar ends -->  
 
 <div class="grid-container">
-    <div class="grid-item1"></div>
+    <div class="grid-item1">     
+    </div>
     <div class="grid-item2">
-            <form>
-                FROM:<br>
-                <input type="text" name="from" value="Boarding Location">
+            <form class="form-center">
+                <!--<span>FROM:</span><br>-->
+                <input type="text" name="from" placeholder="Boarding Location">
                 <br>
-                TO:<br>
-                <input type="text" name="to" value="Destination">
-                <br><br>
-                <input type="submit" value="Submit">
-              </form> 
+                <!--<span>TO:</span><br> -->
+                <input type="text" name="to" placeholder="Destination">
+                <select class="custom-select" name="time">
+                    <option value="all">All Buses</option>
+                    <option value="morning">5AM-12PM</option>
+                    <option value="noon">12PM-4PM</option>
+                    <option value="evening">4PM-7PM</option>
+                    <option value="night">7PM-12AM</option>
+                    <option value="early_morning">12AM-5AM</option>
+                  </select>
+                <br>
+                <button type="submit">Submit  <i class="fas fa-rocket"></i></button>
+                
+            </form> 
 
     </div>
 </div>

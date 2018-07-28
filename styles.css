@@ -1,9 +1,13 @@
+body{
+    margin: 0px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #250078;
 }
 
 li {
@@ -11,15 +15,17 @@ li {
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 25px;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #160147;
 }
 
 
@@ -34,7 +40,11 @@ li a:hover:not(.active) {
 	text-align: center;
     height: 95vh;
     grid-auto-columns: auto auto;
-    background-color: aqua;
+    width: 45vw;
+    background-image: url("./images/busimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .grid-item2 {
@@ -43,7 +53,57 @@ li a:hover:not(.active) {
 	text-align: center;
     height: 91vh;
     grid-auto-columns: auto auto;
+    width: 55vw;
+    background-image: url("./images/paper_fibers.png")
+    
 }
-body{
-    margin: 0px;
+
+/* form styling */
+.form-center{
+    top: 25%;
+    position: relative;
+}
+
+input[type=text],select {
+    width: 30vw;
+    padding: 25px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    background-color: white;
+    font-size: large;
+}
+
+button{
+    width: 30vw;
+    height: 6vh;
+    background-color: #250078;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* select */
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-color: white;
+    outline: none;
+  }
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
 }
