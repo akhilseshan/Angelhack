@@ -35,9 +35,18 @@
                 <br>
                 <!--<span>TO:</span><br> -->
                 <input type="text" name="to" placeholder="Destination">
-                <br><br>
+                <select class="custom-select" name="time">
+                    <option value="all">All Buses</option>
+                    <option value="morning">5AM-12PM</option>
+                    <option value="noon">12PM-4PM</option>
+                    <option value="evening">4PM-7PM</option>
+                    <option value="night">7PM-12AM</option>
+                    <option value="early_morning">12AM-5AM</option>
+                  </select>
+                <br>
                 <button type="submit">Submit  <i class="fas fa-rocket"></i></button>
-              </form> 
+                
+            </form> 
 
     </div>
 </div>

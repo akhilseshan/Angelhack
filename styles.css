@@ -40,7 +40,6 @@ li a:hover:not(.active) {
 	text-align: center;
     height: 95vh;
     grid-auto-columns: auto auto;
-    background-color: aqua;
     width: 45vw;
     background-image: url("./images/busimage.jpg");
     background-size: cover;
@@ -65,7 +64,7 @@ li a:hover:not(.active) {
     position: relative;
 }
 
-input[type=text] {
+input[type=text],select {
     width: 30vw;
     padding: 25px 20px;
     margin: 8px 0;
@@ -89,4 +88,22 @@ button{
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+/* select */
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-color: white;
+    outline: none;
+  }
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
 }
